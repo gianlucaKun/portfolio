@@ -1,0 +1,26 @@
+
+$bg-color: rgb(34, 40, 49);
+$font-color: rgb(202, 202, 202);
+
+:root {
+    background-color: $bg-color;
+    color: $font-color;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4{
+color: #eaeaea;
+}
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color: $font-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover {
+        color: rgb(238, 179, 52);
+    }
+}

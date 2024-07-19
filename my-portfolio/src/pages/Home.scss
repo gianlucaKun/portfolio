@@ -1,0 +1,72 @@
+main.containerHome {
+  border: 2px solid greenyellow;
+  margin: 25px 0;
+  padding-bottom: 15px;
+}
+
+h4.welcome {
+  border: 1px solid #ddd;
+  width: fit-content;
+  padding: 8px 5px;
+  background: rgb(118, 171, 174);
+  background: linear-gradient(
+    180deg,
+    rgba(118, 171, 174, 1) 0%,
+    rgba(77, 101, 107, 1) 12%,
+    rgba(49, 54, 63, 1) 25%,
+    rgba(34, 40, 49, 1) 50%,
+    rgba(49, 54, 63, 1) 75%,
+    rgba(77, 101, 107, 1) 88%,
+    rgba(118, 171, 174, 1) 100%
+  );
+}
+.containerBio {
+  width: 450px;
+
+  button {
+    background-color: transparent;
+    border: none;
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+  .circleRight {
+    font-size: 1.2rem;
+    position: relative;
+    top: 3px;
+  }
+}
+
+.containerSkills {
+    background-color: rgb(27, 31, 37);
+    text-align: center;
+    width: fit-content;
+    margin: 25px auto 5px;
+    padding: 10px 35px;
+    border-radius: 33px;
+    .caruselSkills {
+        width: max-content;
+        display: flex;
+        margin: auto;
+        gap: 25px;
+        button {
+            font-size: 1.5rem;
+            height: fit-content;
+            margin: auto;
+            color: #ddd;
+            background-color: rgba(15, 17, 21, 0.598);
+            border: none;
+            border-radius: 100%;
+            padding: 10px 15px;
+
+            &:hover {
+                background-color: rgba(15, 17, 21, 1);
+                color: #fff;
+                cursor: grabbing;
+            }
+        }
+
+    }
+}

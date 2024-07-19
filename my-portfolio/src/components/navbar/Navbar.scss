@@ -1,0 +1,29 @@
+$bg-color: rgb(34, 40, 49);
+
+nav {position: relative;
+    top: 20px;
+    width: 50%;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: $bg-color;
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.github-logo {
+    width: 52px;
+}
+.instagram-logo {
+    width: 33px;
+}
+
+.loginBtn{
+    background-color: rgb(47, 55, 67);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+
+}
