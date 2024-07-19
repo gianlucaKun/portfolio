@@ -1,4 +1,6 @@
 import React from 'react'
+import progress from '../../assets/progress.png'
+import './Skills.scss'
 
 interface skillsProps {
     number: number,
@@ -8,8 +10,8 @@ interface skillsProps {
 const Skills: React.FC<skillsProps> = ({number, caption}) => {
   return (
     <div>
-    <img src="" alt="" />
-    <h4>{number}</h4>
+      
+    <div className='progresscircle'><h4>{number}</h4></div>
     <h4>{caption}</h4>
     </div>
   )

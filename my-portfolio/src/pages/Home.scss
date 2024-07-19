@@ -1,7 +1,7 @@
 main.containerHome {
   border: 2px solid greenyellow;
-  margin: 25px 0;
-  padding-bottom: 15px;
+  margin: 85px 0 25px;
+  padding: 30px 120px 15px;
 }
 
 h4.welcome {
@@ -22,7 +22,13 @@ h4.welcome {
 }
 .containerBio {
   width: 450px;
-
+  margin-top: 55px;
+  h2{
+    text-align: left;
+    font-size: 3rem;
+    width: max-content;
+    height: 6rem;
+  }
   button {
     background-color: transparent;
     border: none;
@@ -43,11 +49,10 @@ h4.welcome {
     background-color: rgb(27, 31, 37);
     text-align: center;
     width: fit-content;
-    margin: 25px auto 5px;
+    margin: 150px auto 5px;
     padding: 10px 35px;
     border-radius: 33px;
     .caruselSkills {
-        width: max-content;
         display: flex;
         margin: auto;
         gap: 25px;
@@ -70,3 +75,4 @@ h4.welcome {
 
     }
 }
+
