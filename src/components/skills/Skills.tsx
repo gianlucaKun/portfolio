@@ -1,5 +1,4 @@
 import React from 'react'
-import progress from '../../assets/progress.png'
 import './Skills.scss'
 
 interface skillsProps {
