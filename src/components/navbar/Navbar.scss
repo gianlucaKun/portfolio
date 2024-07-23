@@ -12,14 +12,14 @@ nav {position: relative;
         }
     }
 }
-
-.github-logo {
-    width: 52px;
+.containerIconSocial {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
 }
-.instagram-logo {
-    width: 33px;
+.social-icon {
+    font-size: 1.8rem;
 }
-
 .loginBtn{
     background-color: rgb(47, 55, 67);
     font-size: 1.5rem;

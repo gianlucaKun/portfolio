@@ -4,6 +4,10 @@ import "./Navbar.scss";
 import github from "../../assets/GitHub-Symbol.png";
 import instagram from "../../assets/instagram-Symbol.png";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faInstagram, faLinkedin, faCodepen } from "@fortawesome/free-brands-svg-icons";
+
+
 const Navbar: React.FC = () => {
   return (
     <nav>
@@ -12,15 +16,18 @@ const Navbar: React.FC = () => {
         <li>ipsum</li>
         <li>test</li>
         <li>prova</li>
-        <div>
-          <a href="https://github.com/gianlucaKun">
-            <img src={github} alt="logo-github" className="github-logo" />
+        <div className="containerIconSocial">
+          <a href="https://github.com/gianlucaKun" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} className="social-icon" />
           </a>
-          <a href="https://github.com/gianlucaKun">
-            <img src={instagram} alt="logo-github" className="instagram-logo" />
+          <a href="https://www.instagram.com/gianluca.sdvb/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className="social-icon" />
           </a>
-          <a href="https://github.com/gianlucaKun">
-            <img src={github} alt="logo-github" className="github-logo" />
+          <a href="https://codepen.io/Gianlucakun95" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faCodepen} className="social-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/gianluca-andreoni/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
           </a>
         </div>
         <div className="containerBtn">
