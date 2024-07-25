@@ -8,7 +8,7 @@ interface skillsProps {
 
 const Skills: React.FC<skillsProps> = ({number, caption}) => {
   return (
-    <div>
+    <div className='containerSkill'>
       
     <div className='progresscircle'><h4>{number}</h4></div>
     <h4>{caption}</h4>

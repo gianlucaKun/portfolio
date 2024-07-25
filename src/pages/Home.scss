@@ -1,5 +1,5 @@
 main.containerHome {
-  border: 2px solid greenyellow;
+  border: 2px solid #1ED400;
   margin: 85px 0 25px;
   padding: 30px 120px 15px;
 }
@@ -8,7 +8,6 @@ h4.welcome {
   border: 1px solid #ddd;
   width: fit-content;
   padding: 8px 5px;
-  background: rgb(118, 171, 174);
   background: linear-gradient(
     180deg,
     rgba(118, 171, 174, 1) 0%,
@@ -20,15 +19,18 @@ h4.welcome {
     rgba(118, 171, 174, 1) 100%
   );
 }
+
 .containerBio {
   width: 450px;
   margin-top: 55px;
-  h2{
+  
+  h2 {
     text-align: left;
     font-size: 3rem;
     width: max-content;
     height: 6rem;
   }
+
   button {
     background-color: transparent;
     border: none;
@@ -38,6 +40,7 @@ h4.welcome {
       font-weight: bold;
     }
   }
+
   .circleRight {
     font-size: 1.2rem;
     position: relative;
@@ -46,33 +49,52 @@ h4.welcome {
 }
 
 .containerSkills {
-    background-color: rgb(27, 31, 37);
-    text-align: center;
-    width: fit-content;
-    margin: 150px auto 5px;
-    padding: 10px 35px;
-    border-radius: 33px;
-    .caruselSkills {
-        display: flex;
-        margin: auto;
-        gap: 25px;
-        button {
-            font-size: 1.5rem;
-            height: fit-content;
-            margin: auto;
-            color: #ddd;
-            background-color: rgba(15, 17, 21, 0.598);
-            border: none;
-            border-radius: 100%;
-            padding: 10px 15px;
+  background-color: rgb(27, 31, 37);
+  text-align: center;
+  margin: 150px auto 5px;
+  padding: 10px 35px;
+  border-radius: 33px;
 
-            &:hover {
-                background-color: rgba(15, 17, 21, 1);
-                color: #fff;
-                cursor: grabbing;
-            }
-        }
+  h2 {
+    margin-bottom: 10px;
+  }
 
+  p {
+    margin-bottom: 20px;
+  }
+
+  .caruselSkills {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    button {
+      font-size: 1.5rem;
+      height: fit-content;
+      margin: auto;
+      color: #ddd;
+      background-color: rgba(15, 17, 21, 0.598);
+      border: none;
+      border-radius: 50%;
+      padding: 10px 15px;
+      
+      &:hover {
+        background-color: rgba(15, 17, 21, 1);
+        color: #fff;
+        cursor: pointer; /* Cambiato da 'grabbing' a 'pointer' */
+      }
     }
-}
 
+    .skills {
+      
+      display: flex;
+      gap: 25px;
+      position: relative;
+      overflow: hidden;
+        .containerSkill {
+          width: 200px;
+          flex-shrink: 0; /* Impedisce che gli elementi si restringano */
+        }
+      }
+    }
+  }

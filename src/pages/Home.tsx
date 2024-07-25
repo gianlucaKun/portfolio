@@ -1,27 +1,25 @@
-import React, {useEffect, useRef} from "react";
-import Typed from 'typed.js'
+import React, { useEffect, useRef } from "react";
+import Typed from "typed.js";
 import "./Home.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleRight } from "@fortawesome/free-regular-svg-icons";
 import Skills from "../components/skills/Skills";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Projects from "../components/projects/Projects";
 
 const Home: React.FC = () => {
   const el = useRef(null);
 
   useEffect(() => {
     const options = {
-      strings: [
-        "Fullstack Developer",
-        "Welcome to my portfolio!"
-      ],
+      strings: ["Fullstack Developer", "Welcome to my portfolio!"],
       typeSpeed: 70,
       backSpeed: 35,
       backDelay: 1500,
       startDelay: 500,
       loop: false, // Loop the sequence indefinitely
       showCursor: true,
-      contentType: 'html',
+      contentType: "html",
     };
 
     const typed = new Typed(el.current, options);
@@ -35,7 +33,11 @@ const Home: React.FC = () => {
     <main className="containerHome">
       <h4 className="welcome">Welcome to my portfolio</h4>
       <div className="containerBio">
-        <h2>  Hi! I'm Gianluca,<br/> <span className="typed-text" ref={el}></span></h2>
+        <h2>
+          {" "}
+          Hi! I'm Gianluca,
+          <br /> <span className="typed-text" ref={el}></span>
+        </h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
           adipisci possimus libero et atque facilis sit, repellat molestias
@@ -58,12 +60,23 @@ const Home: React.FC = () => {
           dolore error illo vitae nulla.
         </p>
         <div className="caruselSkills">
-          <button><FontAwesomeIcon icon={faArrowLeft} /></button>
-          <Skills number={85} caption="FrontEnd" />
-          <Skills number={85} caption="BackEnd" />
-          <Skills number={85} caption="Database" />
-          <button><FontAwesomeIcon icon={faArrowRight} /></button>
+          <button>
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </button>
+          <div className="skills">
+            <Skills number={75} caption="FrontEnd" />
+            <Skills number={85} caption="BackEnd" />
+            <Skills number={80} caption="Database" />
+            <Skills number={65} caption="Figma - Design & Prototyping" />
+            <Skills number={75} caption="GitHub - Version Control" />
+          </div>
+          <button>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </button>
         </div>
+      </div>
+      <div>
+        <Projects/>
       </div>
     </main>
   );

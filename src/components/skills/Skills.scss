@@ -1,12 +1,24 @@
-.progresscircle {
-    background-image: url(../../assets/progress.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80px;
-    height: 80px;
-    margin: auto;
-    h4 {
+.containerSkill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .progresscircle {
+      background-image: url(../../assets/circular-indeterminate.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80px;
+      height: 80px;
+      width: 80px; // Aggiunto per assicurare che l'elemento sia circolare
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      h4 {
         position: relative;
-        top: 33px;
+        top: 0; // Modificato per centrare il testo
+      }
     }
-}
+  }
+  
