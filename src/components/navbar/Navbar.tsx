@@ -1,9 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
 
-import github from "../../assets/GitHub-Symbol.png";
-import instagram from "../../assets/instagram-Symbol.png";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedin, faCodepen } from "@fortawesome/free-brands-svg-icons";
 
