@@ -1,0 +1,64 @@
+.containerCard {
+    position: relative;
+    width: 300px; /* Puoi adattare la larghezza secondo le tue necessità */
+    perspective: 1000px; /* Aggiungi prospettiva per un effetto 3D più marcato */
+    padding-top: 100px;
+    .card {
+      position: relative;
+      overflow: visible; /* Permette agli elementi di uscire dal contenitore */
+      padding-bottom: 60px; /* Aggiungi spazio extra per evitare che l'immagine venga tagliata */
+    }
+    img {
+      width: 100%;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      transform-origin: bottom; /* La rotazione avverrà attorno alla parte inferiore dell'immagine */
+    }
+    .text {
+      position: absolute;
+      bottom: 10px; /* Posiziona il testo sopra l'immagine */
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+      color: white;
+      padding: 10px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      transform: translateY(10%);
+      height: 180px;
+      button {
+        background-color: rgb(255, 111, 0);
+        cursor: pointer;
+        position: inherit;
+        bottom: 5px;
+        left: 35%;
+        width: fit-content;
+      }
+    }
+    &:hover {
+      img {
+        transform: rotateX(-80deg) translateY(50px) translateZ(-9px); /* L'immagine si sposta verso il basso e ruota verso l'interno */
+      }
+      .text {
+        opacity: 1;
+        transform: translateY(-205px); /* Il testo appare sopra l'immagine */
+      }
+      .line {
+        opacity: 1;
+        transform: translateY(-115px); /* La linea appare */
+      }
+    }
+  }
+  .line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 2px;
+    height: 90px;
+    background-color: white;
+  }
+  
