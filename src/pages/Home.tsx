@@ -12,7 +12,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["Fullstack Developer", "Welcome to my portfolio!"],
+      strings: ["Fullstack Developer", "Welcome to my portfolio"],
       typeSpeed: 70,
       backSpeed: 35,
       backDelay: 1500,
@@ -31,7 +31,6 @@ const Home: React.FC = () => {
 
   return (
     <main className="containerHome">
-      <h4 className="welcome">Welcome to my portfolio</h4>
       <div className="containerBio">
         <h2>
           {" "}

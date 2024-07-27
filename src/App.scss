@@ -4,6 +4,8 @@ $font-color: rgb(202, 202, 202);
 
 :root {
     background-color: $bg-color;
+    background-image: url("./src/assets/wp.jpg");
+    background-size: cover;
     color: $font-color;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
