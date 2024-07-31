@@ -50,3 +50,29 @@ nav {
     justify-content: space-between;
   }
 }
+@media (width < 450px) {
+    nav {
+        position: relative;
+        top: 20px;
+        width: 100%;
+        ul {
+          display: flex;
+          li {
+            list-style: none;
+            margin-left:130px;
+          }
+        }
+      }
+
+      .containerIconSocial {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: -130px;
+         a {
+            text-align: right;
+            margin-top: -5px;
+            padding-right: 5px;
+         }
+      }
+}

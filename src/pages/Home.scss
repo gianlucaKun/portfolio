@@ -106,15 +106,20 @@ h4.welcome {
     padding: 25px 5px;
   }
   .containerBio {
-    width: 350px;
+    width: 300px;
     margin-top: 25px;
 
     h2 {
       text-align: left;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       width: max-content;
       height: 4rem;
     }
+  }
+
+  .containerSkills {
+    margin: 30px auto 5px;
+    padding: 3px 35px;
   }
   }
 

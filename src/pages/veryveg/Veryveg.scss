@@ -10,7 +10,7 @@ main.containerVeryveg {
 
 }
 .btnleftArrow {
-  background-color: #000;
+  background-color: #000000a9;
   border-radius: 50%;
   padding: 10px 15px;
   font-size: 1.5rem;
@@ -50,5 +50,53 @@ main.containerVeryveg {
     grid-area: description;
     text-align: justify;
     padding: 0 15px 0 0;
+}
+}
+
+@media (width < 1250px) {
+    main.containerVeryveg {
+        margin: 45px 5px 25px;
+        padding: 30px 10px 15px;
+        .btnleftArrow {
+            border-radius: 50%;
+            font-size: 1.3rem;
+            position: absolute;
+            left: 25px;  
+            top: 150px;
+          }
+    
+    .containerFigma {
+        width: 90%;
+        display: grid;
+        grid: auto / 50% 30% 20%;
+        grid-template-areas: 
+        "title title title"
+        "description img1 img1"
+        "img2 img2 img2";
+        column-gap: 25px;
+    }
+    .titleFigma  {
+        grid-area: title;
+
+    }
+    .figma1 {
+        margin-top: 40px;
+        grid-area: img1;
+        width: 80%;
+        z-index: 100;
+    }
+    .figma2 {
+        grid-area: img2; 
+        width: 40%;
+        margin-top: -50px;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    .descriptionFigma {
+        grid-area: description;
+        text-align: justify;
+        padding: 0 10px 0 0;
+        margin-right: -20px;
+    }
 }
 }

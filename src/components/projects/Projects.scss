@@ -9,9 +9,16 @@
 }
 
 .containerPreviewProjects {
-    margin-top: 55px;
+    margin-top: 45px;
     justify-content: space-around;
     display: flex;
     gap: 50px 0;
     flex-wrap: wrap;
+}
+
+@media (width < 1250px) {
+    .containerPreviewProjects {
+        margin-top: 75px;
+       
+    } 
 }
