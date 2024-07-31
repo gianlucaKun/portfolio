@@ -1,14 +1,18 @@
-import React from 'react'
-import './Header.scss'
-import logo from '../../assets/alien.webp'
+import React from "react";
+import "./Header.scss";
+import logo from "../../assets/alien.webp";
 
-const Header: React.FC = () => {
-  return (
-    <header>
-    <img src={logo} alt="prova logo" />
-    <h1></h1>
-    </header>
-  )
+interface HeaderProps {
+  animate: boolean;
 }
 
-export default Header
+const Header: React.FC<HeaderProps> = ({ animate }) => {
+  return (
+    <header>
+      <img src={logo} alt="prova logo" className={animate ? "animate" : ""} />
+      <h1></h1>
+    </header>
+  );
+};
+
+export default Header;

@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   return (
     <nav>
       <ul>
-        <li>lorem</li>
+        <li><a href="/portfolio/#projects">projects</a></li>
         <li>ipsum</li>
         <li>test</li>
         <li>prova</li>

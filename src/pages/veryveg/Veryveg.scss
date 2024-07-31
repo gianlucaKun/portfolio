@@ -1,0 +1,20 @@
+main.containerVeryveg {
+  margin: 85px 0 25px;
+  padding: 30px 120px 15px;
+
+
+//   border: 3px solid red;
+
+& h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+}
+.btnleftArrow {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 45px;  
+  top: 45px;
+}

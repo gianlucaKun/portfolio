@@ -1,24 +1,45 @@
 import "./App.scss";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import Veryveg from "./pages/veryveg/Veryveg";
+import { useEffect, useState } from "react";
 
 function App() {
+
+  const location = useLocation();
+  const [animateLogo, setAnimateLogo] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setAnimateLogo(true);
+    }
+  }, [location])
+
   return (
-    <Router basename="portfolio">
+    <div>
       <div className="containerHeader">
-      <Header />
-      <Navbar />
+        <Header animate={animateLogo} />
+        <Navbar />
       </div>
-      {/* <Hello name="world" /> */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="" element={<Home />} />
+        <Route path="/veryveg" element={<Veryveg />} />
       </Routes>
       <Footer />
+    </div>
+  );
+}
+
+const AppWrapper: React.FC = () => {
+  return (
+    <Router basename="portfolio">
+      <App />
     </Router>
   );
 }
 
-export default App;
+export default AppWrapper;
+
