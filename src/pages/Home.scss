@@ -98,3 +98,22 @@ h4.welcome {
       }
     }
   }
+
+  // max width
+
+  @media (width < 450px) {
+    main.containerHome {
+    padding: 25px 5px;
+  }
+  .containerBio {
+    width: 350px;
+    margin-top: 25px;
+
+    h2 {
+      text-align: left;
+      font-size: 1.8rem;
+      width: max-content;
+      height: 4rem;
+    }
+  }
+  }

@@ -7,7 +7,7 @@ main.containerVeryveg {
 
 & h1, h2, h3, h4 {
     text-transform: uppercase;
-}
+
 }
 .btnleftArrow {
   background-color: #000;
@@ -16,5 +16,39 @@ main.containerVeryveg {
   font-size: 1.5rem;
   position: absolute;
   left: 45px;  
-  top: 45px;
+  top: 185px;
+}
+.title {
+    text-align: center;
+}
+
+
+.containerFigma {
+    display: grid;
+    grid: auto / 2fr 1fr 2fr;
+    grid-template-areas: 
+    "title title title"
+    "description img1 img2";
+    column-gap: 85px;
+}
+.titleFigma  {
+    grid-area: title;
+}
+.figma1 {
+    margin-top: -60px;
+    grid-area: img1;
+    width: 150%;
+    z-index: 100;
+}
+.figma2 {
+    grid-area: img2; 
+    width: 40%;
+    padding-top: 50px;
+    margin-left: 50px;
+}
+.descriptionFigma {
+    grid-area: description;
+    text-align: justify;
+    padding: 0 15px 0 0;
+}
 }
