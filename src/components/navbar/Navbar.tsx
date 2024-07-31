@@ -10,9 +10,9 @@ const Navbar: React.FC = () => {
     <nav>
       <ul>
         <li><a href="/portfolio/#projects">projects</a></li>
-        <li>ipsum</li>
-        <li>test</li>
-        <li>prova</li>
+        <li className="mobile">ipsum</li>
+        <li className="mobile">test</li>
+        <li className="mobile">prova</li>
         <div className="containerIconSocial">
           <a href="https://github.com/gianlucaKun" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} className="social-icon" />
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
             <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
           </a>
         </div>
-        <div className="containerBtn">
+        <div className="containerBtn mobile" >
           <button className="loginBtn">login</button>
         </div>
       </ul>

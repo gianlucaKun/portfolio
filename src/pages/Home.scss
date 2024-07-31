@@ -117,3 +117,9 @@ h4.welcome {
     }
   }
   }
+
+  @media (width < 1250px) {
+    main.containerHome {
+    padding: 25px 5px;
+  }
+}
