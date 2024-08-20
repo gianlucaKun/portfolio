@@ -67,7 +67,7 @@ const Home: React.FC = () => {
             <Skills number={85} caption="BackEnd" />
             <Skills number={80} caption="Database" />
             <Skills number={65} caption="Figma - Design & Prototyping" />
-            <Skills number={75} caption="GitHub - Version Control" />
+            <Skills number={85} caption="GitHub - Version Control" />
           </div>
           <button>
             <FontAwesomeIcon icon={faArrowRight} />

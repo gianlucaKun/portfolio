@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Veryveg from "./pages/veryveg/Veryveg";
 import { useEffect, useState } from "react";
+import Pizzeria from "./pages/pizzeria/Pizzeria";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         <Route path="" element={<Home />} />
         <Route path="/veryveg" element={<Veryveg />} />
+        <Route path="/pizzeria" element={<Pizzeria />} />
       </Routes>
       <Footer />
     </div>

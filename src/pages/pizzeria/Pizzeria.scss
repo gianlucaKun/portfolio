@@ -1,0 +1,17 @@
+main.containerPizzeria {
+    margin: 85px 0 25px;
+    padding: 30px 120px 15px;
+
+    .btnleftArrow {
+        background-color: #000000a9;
+        border-radius: 50%;
+        padding: 10px 15px;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 45px;  
+        top: 185px;
+      }
+      .title {
+        text-align: center;
+    }
+}

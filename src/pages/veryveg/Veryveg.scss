@@ -52,7 +52,18 @@ main.containerVeryveg {
     padding: 0 15px 0 0;
 }
 }
+.linkrepository {
+    text-decoration: underline;
+    color: rgb(0, 98, 255);
+    background-color: #ddd;
+    border-radius: 33px;
+    padding: 5px 15px;
+}
+.linkrepository:hover {
 
+    background-color: #484848;
+   
+}
 @media (width < 1250px) {
     main.containerVeryveg {
         margin: 45px 5px 25px;
@@ -100,3 +111,4 @@ main.containerVeryveg {
     }
 }
 }
+

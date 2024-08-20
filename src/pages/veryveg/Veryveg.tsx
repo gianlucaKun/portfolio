@@ -17,19 +17,12 @@ const Veryveg: React.FC = () => {
       <h1 className="title">Veryveg</h1>
       <div className="containerDescription">
         <p className="description">
-          Progetto di sviluppo di un'applicazione mobile destinata a
-          semplificare la gestione di diete vegane o vegetariane. L'applicazione
-          include funzionalità avanzate come la scansione dei prodotti tramite
-          barcode, la creazione di liste della spesa e la condivisione di
-          ricette. Lavoro collaborativo con un altro sviluppatore attraverso
-          l'uso di Git per il controllo del codice e il lavoro di squadra.
-          Scansione Barcode: Implementazione della funzionalità di scansione dei
-          prodotti alimentari tramite barcode per ottenere informazioni
-          dettagliate. Gestione Lista della Spesa: Creazione, aggiornamento e
-          gestione delle liste della spesa personalizzate dagli utenti.
-          Condivisione di Ricette: Implementazione della funzionalità di
-          condivisione delle ricette di cucina per favorire uno stile di vita
-          vegano o vegetariano.
+        A mobile application development project aimed at simplifying the management of vegan or vegetarian diets. The application includes advanced features such as product scanning via barcode, creating shopping lists, and sharing recipes. Collaborative work was done with another developer, utilizing Git for code control and teamwork.
+<ul>
+<li>Barcode Scanning: Implemented functionality to scan food products via barcode to retrieve detailed information. </li>
+<li>Shopping List Management: Enabled users to create, update, and manage personalized shopping lists. </li>
+<li>Recipe Sharing: Developed a feature to share cooking recipes, promoting a vegan or vegetarian lifestyle.</li>
+</ul>
         </p>
       </div>
       <div className="containerFigma">
@@ -37,21 +30,24 @@ const Veryveg: React.FC = () => {
         <img src={figma1} alt="" className="imgFigma figma1"/>
         <img src={figma2} alt="" className="imgFigma figma2"/>
         <p className="description descriptionFigma">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-          sequi ipsam. Quaerat, reiciendis ab incidunt exercitationem ullam ipsa
-          quis atque error? Aperiam adipisci laudantium exercitationem eum,
-          magni hic aliquam libero?
+        Used Figma for creating mockups and making various design choices across all aspects of the app, including the app icon, homepage, camera scanner, buttons, and user feedback.
         </p>
       </div>
       <div className="containerBE">
         <h3 className="titleBE">backend</h3>
         <img src="" alt="" className="imgBE"/>
         <p className="description descriptionBE">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-          nobis itaque ab porro debitis, cumque facere. Ex voluptas qui
-          consectetur nesciunt? Totam pariatur officia nisi modi, mollitia iure
-          quibusdam odio!
+        The backend is developed using Java 17 and Spring Boot 4, with MapStruct for object mapping and Lombok for reducing boilerplate code. MongoDB is used as the database, and the backend is hosted on Heroku.
         </p>
+        <a href="https://github.com/gianlucaKun/veryvegBackend" className="linkrepository">backend repository on my github</a>
+      </div>
+      <div className="containerFE">
+        <h3 className="titleBE">frontend</h3>
+        <img src="" alt="" className="imgFE"/>
+        <p className="description descriptionFE">
+        The frontend of the application is built using React Native, which allows for a smooth and responsive user interface across both iOS and Android platforms. This technology was chosen for its efficiency in building cross-platform mobile applications, ensuring a consistent user experience.
+        </p>
+        <a href="https://github.com/gianlucaKun/veryveg" className="linkrepository">frontend repository on my github</a>
       </div>
       <h1>in progress.....</h1>
     </main>

@@ -6,11 +6,13 @@ interface CardProps {
   imgUrl: string;
   text: string;
   link: string;
+  onHover: () => void;
+  onLeave: () => void;
 }
 
-const ProjectCard: React.FC<CardProps> = ({ imgUrl, text, link }) => {
+const ProjectCard: React.FC<CardProps> = ({ imgUrl, text, link, onHover, onLeave }) => {
   return (
-    <div className="containerCard">
+    <div className="containerCard" onMouseEnter={onHover} onMouseLeave={onLeave}>
       <div className="card">
         <img src={imgUrl} alt="Project Preview" />
         <div className="text">
