@@ -3,6 +3,7 @@ import ProjectCard from '../cards/ProjectCard'
 import './Projects.scss'
 import veryvegpreview from '../../assets/veryvegpreview.jpg'
 import pizzeriapreview from '../../assets/pizzeriaPreview.png'
+import campingpreview from '../../assets/CampingLandingPage.png'
 
 const Projects: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -33,9 +34,9 @@ const Projects: React.FC = () => {
               onLeave={() => setIsHovered(false)}
             />
             <ProjectCard 
-              imgUrl='https://picsum.photos/400/300' 
-              text="lorem ipsum casuale" 
-              link='/veryveg'
+              imgUrl={campingpreview} 
+              text='camping Zampa' 
+              link='https://camping-site-rouge.vercel.app/'
               onHover={() => setIsHovered(true)}
               onLeave={() => setIsHovered(false)}
             />

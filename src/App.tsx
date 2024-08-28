@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import Veryveg from "./pages/veryveg/Veryveg";
 import { useEffect, useState } from "react";
 import Pizzeria from "./pages/pizzeria/Pizzeria";
+import Camping from "./pages/camping/Camping";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="" element={<Home />} />
         <Route path="/veryveg" element={<Veryveg />} />
         <Route path="/pizzeria" element={<Pizzeria />} />
+        <Route path="/camping" element={<Camping />} />
       </Routes>
       <Footer />
     </div>
