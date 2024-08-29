@@ -23,7 +23,7 @@ h4.welcome {
 .containerBio {
   width: 450px;
   margin-top: 55px;
-  
+
   h2 {
     text-align: left;
     font-size: 3rem;
@@ -78,7 +78,7 @@ h4.welcome {
       // border: none;
       // border-radius: 50%;
       // padding: 10px 15px;
-      
+
       // &:hover {
       //   background-color: rgba(15, 17, 21, 1);
       //   color: #fff;
@@ -88,23 +88,22 @@ h4.welcome {
     }
 
     .skills {
-      
       display: flex;
       gap: 25px;
       position: relative;
       width: 100%;
-        .containerSkill {
-          width: 200px;
-          flex-shrink: 0; /* Impedisce che gli elementi si restringano */
-        }
+      .containerSkill {
+        width: 200px;
+        flex-shrink: 0; /* Impedisce che gli elementi si restringano */
       }
     }
   }
+}
 
-  // max width
+// max width
 
-  @media (width < 450px) {
-    main.containerHome {
+@media (width < 450px) {
+  main.containerHome {
     padding: 25px 5px;
   }
   .containerBio {
@@ -122,38 +121,36 @@ h4.welcome {
   .containerSkills {
     margin: 30px auto 5px;
   }
-  }
+}
 
-  @media (width < 1250px) {
-    main.containerHome {
+@media (width < 1250px) {
+  main.containerHome {
     padding: 25px 5px;
-  
 
-  .caruselSkills {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 80%;
-    overflow-x: scroll; 
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-    &::-webkit-scrollbar {
-      width: 12px;
-      height: 12px; /* Altezza della scrollbar orizzontale */
-    }
-    button {
-
-      display: none;
-    }
-
-    .skills {
-      padding: 0 30px;
-  scroll-snap-align: center;
-  width: 50%;
+    .caruselSkills {
+      padding: 0;
       display: flex;
-      position: relative;
+      align-items: center;
+      margin: auto;
+      width: 80%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      &::-webkit-scrollbar {
+        width: 12px;
+        height: 12px; /* Altezza della scrollbar orizzontale */
+      }
+      button {
+        display: none;
+      }
+
+      .skills {
+        padding: 0 30px;
+        scroll-snap-align: center;
+        width: 30%;
+        display: flex;
+        position: relative;
         .containerSkill {
           width: 100%;
           flex-shrink: 0; /* Impedisce che gli elementi si restringano */
