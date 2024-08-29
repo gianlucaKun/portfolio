@@ -16,6 +16,7 @@
     p {
         opacity: 1;
         transition: opacity 0.3s ease;
+        text-align: center;
     }
 }
 
@@ -29,6 +30,7 @@
 
 @media (width < 1250px) {
     .containerPreviewProjects {
-        margin-top: 75px;
+        margin-top: 5px;
+        gap:0;
     } 
 }

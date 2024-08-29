@@ -52,7 +52,7 @@ h4.welcome {
   background-color: rgba(28, 28, 28, 0.881);
   text-align: center;
   margin: 150px auto 5px;
-  padding: 10px 35px;
+  padding: 10px 5px;
   border-radius: 33px;
 
   h2 {
@@ -92,6 +92,7 @@ h4.welcome {
       display: flex;
       gap: 25px;
       position: relative;
+      width: 100%;
         .containerSkill {
           width: 200px;
           flex-shrink: 0; /* Impedisce che gli elementi si restringano */
@@ -120,7 +121,6 @@ h4.welcome {
 
   .containerSkills {
     margin: 30px auto 5px;
-    padding: 3px 35px;
   }
   }
 

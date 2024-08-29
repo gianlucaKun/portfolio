@@ -38,14 +38,11 @@ const Home: React.FC = () => {
           <br /> <span className="typed-text" ref={el}></span>
         </h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-          adipisci possimus libero et atque facilis sit, repellat molestias
-          perspiciatis corporis, velit vitae eligendi officia ipsum odit iste
-          quasi, quidem minus.
+        Mi occupo di sviluppare applicazioni web complete, dal frontend intuitivo al backend robusto e sicuro. Con una forte passione per il codice pulito e le soluzioni innovative, mi impegno a creare prodotti digitali che migliorano l'esperienza utente e rispondono alle esigenze del business. Se hai bisogno di un partner tecnico affidabile e competente per il tuo prossimo progetto, non esitare a contattarmi.
         </p>
         <button>
-          <a href="#">
-            Let's Connect{" "}
+          <a  href="mailto:gianluca.andreoni95@gmail.com?subject=Let's Connect!">
+          Contact Me{" "}
             <FontAwesomeIcon icon={faCircleRight} className="circleRight" />
           </a>
         </button>
@@ -53,10 +50,7 @@ const Home: React.FC = () => {
       <div className="containerSkills">
         <h2>Skills</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic modi
-          obcaecati quia quisquam accusantium. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Molestiae, harum quibusdam perferendis
-          dolore error illo vitae nulla.
+        Come Fullstack Developer, mi sono specializzato in diverse aree chiave dello sviluppo web, combinando design, codice e gestione efficiente dei progetti.
         </p>
         <div className="caruselSkills">
           <button>
@@ -66,8 +60,8 @@ const Home: React.FC = () => {
             <Skills number={75} caption="FrontEnd" />
             <Skills number={85} caption="BackEnd" />
             <Skills number={80} caption="Database" />
-            <Skills number={65} caption="Figma - Design & Prototyping" />
-            <Skills number={85} caption="GitHub - Version Control" />
+            <Skills number={65} caption="Figma" />
+            <Skills number={85} caption="GitHub" />
           </div>
           <button>
             <FontAwesomeIcon icon={faArrowRight} />

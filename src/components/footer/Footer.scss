@@ -1,0 +1,23 @@
+.footer {
+    background-color: #1c1c1c67;
+    color: #fdfdfd;
+    padding: 20px;
+    text-align: center;
+    
+    .footer-content {
+      max-width: 100%;
+      margin: 0 auto;
+  
+      .footer-text {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+  
+      .footer-description {
+        margin: 10px 0 0;
+        font-size: 0.8rem;
+        color: #b0b0b0; // Un grigio chiaro per il testo descrittivo
+      }
+    }
+  }
+  

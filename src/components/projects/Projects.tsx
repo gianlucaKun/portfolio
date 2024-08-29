@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
     <div className='containerProjects' id='projects'>
         <div><h2>Projects</h2>
         <p className={isHovered ? 'hidden' : ''}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eum quod maiores at quidem culpa quasi eligendi ea, consequatur nemo animi et! Unde illum eos itaque repellat at tempore ducimus.
+        Ho lavorato su una varietà di progetti che dimostrano la mia capacità di sviluppare soluzioni web complete e innovative, integrando al meglio design, backend, e gestione dei dati.
         </p></div>
         <div className='containerPreviewProjects'>
             <ProjectCard 
@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
             <ProjectCard 
               imgUrl={campingpreview} 
               text='camping Zampa' 
-              link='https://camping-site-rouge.vercel.app/'
+              link='/camping'
               onHover={() => setIsHovered(true)}
               onLeave={() => setIsHovered(false)}
             />

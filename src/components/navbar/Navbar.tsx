@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedin, faCodepen } from "@fortawesome/free-brands-svg-icons";
 
@@ -9,10 +9,10 @@ const Navbar: React.FC = () => {
   return (
     <nav>
       <ul>
-        <li><a href="/portfolio/#projects">projects</a></li>
-        <li className="mobile">ipsum</li>
-        <li className="mobile">test</li>
-        <li className="mobile">prova</li>
+        <li className="projectsNavbar"><a href="/portfolio/#projects">Progetti</a></li>
+        <li className="mobile displayNone">Formazione</li>
+        <li className="mobile displayNone"><Link to="/cv">Curriculum Vitae</Link></li>
+        <li className="mobile displayNone">prova</li>
         <div className="containerIconSocial">
           <a href="https://github.com/gianlucaKun" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} className="social-icon" />
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
             <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
           </a>
         </div>
-        <div className="containerBtn mobile" >
+        <div className="containerBtn mobile displayNone" >
           <button className="loginBtn">login</button>
         </div>
       </ul>

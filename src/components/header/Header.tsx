@@ -8,7 +8,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ animate }) => {
   return (
-    <header>
+    <header id="header">
       <img src={logo} alt="prova logo" className={animate ? "animate" : ""} />
       <h1></h1>
     </header>

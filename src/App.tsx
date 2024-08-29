@@ -8,6 +8,7 @@ import Veryveg from "./pages/veryveg/Veryveg";
 import { useEffect, useState } from "react";
 import Pizzeria from "./pages/pizzeria/Pizzeria";
 import Camping from "./pages/camping/Camping";
+import Curriculum from "./pages/curriculum/Curriculum";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/veryveg" element={<Veryveg />} />
         <Route path="/pizzeria" element={<Pizzeria />} />
         <Route path="/camping" element={<Camping />} />
+        <Route path="/cv" element={<Curriculum />} />
       </Routes>
       <Footer />
     </div>
