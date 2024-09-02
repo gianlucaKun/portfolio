@@ -1,70 +1,141 @@
+$bgDiv: rgba(0, 0, 0, 0.441);
+
+
 .containerCamping {
-    margin: 85px 0 25px;
-    padding: 30px 120px 15px;
-  
-    h1,
-    h2,
-    h3,
-    h4 {
-      text-transform: uppercase;
+  margin: 85px 0 25px;
+  padding: 30px 120px 15px;
+  .mobile {
+    display: none;
+  }
+  h1, h2, h3, h4 {
+    text-transform: uppercase;
+  }
+
+  .title {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 25px;
+  }
+
+  .btnleftArrow {
+    background-color: rgba(0, 0, 0, 0.66);
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 45px;
+    top: 185px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .viewControls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+
+      svg {
+        margin-right: 5px;
+      }
     }
-  
-    .title {
-      text-align: center;
-      margin-top: -10px;
-      margin-bottom: 25px;
-    }
-  
-    .btnleftArrow {
-      background-color: rgba(0, 0, 0, 0.66); // corrisponde a #000000a9
-      border-radius: 50%;
-      padding: 10px 15px;
-      font-size: 1.5rem;
-      position: absolute;
-      left: 45px;  
-      top: 185px;
-      border: none; // aggiungi questa riga se è necessario rimuovere il bordo
-      cursor: pointer; // aggiungi questa riga per rendere il cursore una mano
-      z-index: 10; // aggiungi questa riga per garantire che il pulsante sia sopra l'iframe
-    }
-  
-    .iframeContainer {
-      position: relative;
-      padding-bottom: 45.25%;
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      background: #fdfdfd;
-  
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
+   
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: column; // Impila i contenuti verticalmente per la vista desktop
+
+    &.mobileView {
+      flex-direction: row; // Allinea i contenuti orizzontalmente per la vista mobile
+      justify-content: space-between;
+
+      .iframeContainer {
+        flex: 1;
+        margin-right: 20px; // Spazio tra iframe e descrizione
+      }
+
+      .containerDescription {
+        flex: 1;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
       }
     }
   }
-  
+
+  .iframeContainer {
+    position: relative;
+    padding-bottom: 45.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #fdfdfd;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    &.rotated {
+      padding-bottom: 38%; // 2:3 aspect ratio for rotated view
+      max-width: 350px;
+    }
+  }
+
+  .description {
+    background-color: $bgDiv;
+    padding: 15px 35px 35px;
+    border-radius: 33px;
+    &.mobileView {
+      margin-top: 0;
+    }
+    height: fit-content;
+  }
+
   @media (width < 750px) {
     .iframeContainer {
-        display: none;
+      display: none;
+    }
+    .viewControls {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      text-align: center;
+      background-color: #ddddddc5;
+      border-radius: 33px;
+      padding: 2px 0;
+
+      a {
+        color: rgb(0, 136, 255);
+        text-decoration: underline;
       }
-      .mobile {
-        text-align: center;
-        background-color: #ddddddc5;
-        border-radius: 33px;
-        padding: 2px 0;
-        a {
-color: rgb(0, 136, 255);
-          text-decoration: underline;        
-}
-.circleRight {
-    position: relative;
-    right: -10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
+
+      .circleRight {
+        position: relative;
+        right: -10px;
+        font-size: 1.5rem;
+        cursor: pointer;
       }
+    }
   }
+}
