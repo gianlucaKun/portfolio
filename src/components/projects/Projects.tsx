@@ -21,6 +21,13 @@ const Projects: React.FC = () => {
         Ho lavorato su una varietà di progetti che dimostrano la mia capacità di sviluppare soluzioni web complete e innovative, integrando al meglio design, backend, e gestione dei dati.
         </p></div>
         <div className='containerPreviewProjects'>
+        <ProjectCard 
+              imgUrl={campingpreview} 
+              text={testoCamping} 
+              link='/camping'
+              onHover={() => setIsHovered(true)}
+              onLeave={() => setIsHovered(false)}
+            />
             <ProjectCard 
               imgUrl={veryvegpreview}
               text={testoveryveg} 
@@ -35,13 +42,7 @@ const Projects: React.FC = () => {
               onHover={() => setIsHovered(true)}
               onLeave={() => setIsHovered(false)}
             />
-            <ProjectCard 
-              imgUrl={campingpreview} 
-              text={testoCamping} 
-              link='/camping'
-              onHover={() => setIsHovered(true)}
-              onLeave={() => setIsHovered(false)}
-            />
+            
             <ProjectCard 
               imgUrl='https://picsum.photos/400/300' 
               text="lorem ipsum casuale" 

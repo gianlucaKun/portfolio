@@ -38,8 +38,8 @@
       background-color: rgb(255, 111, 0);
       cursor: pointer;
       position: inherit;
-      bottom: -25px;
       left: 35%;
+      margin-top: -15px;
       width: fit-content;
     }
   }
@@ -73,3 +73,12 @@
   background-color: white;
 }
 
+.containerCard:hover{
+  top: 20px;
+}
+
+@media (width < 750px) {
+  .containerCard:hover{
+    top: 80px;
+  }
+}

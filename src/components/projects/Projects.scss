@@ -1,36 +1,73 @@
 .containerProjects {
-    margin-top: 50px;
-    background-color: rgba(28, 28, 28, 0.879);
-    border-radius: 33px;
-    padding: 10px 35px;
-    
-    h2{
-        text-align: center;
-    }
+  margin-top: 25px;
+  background-color: rgba(28, 28, 28, 0.879);
+  border-radius: 33px;
+  padding: 10px 35px;
 
-    p.hidden {
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
+  h2 {
+    text-align: center;
+  }
 
-    p {
-        opacity: 1;
-        transition: opacity 0.3s ease;
-        text-align: center;
-    }
+  p.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  p {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    text-align: center;
+  }
 }
 
 .containerPreviewProjects {
-    margin-top: 45px;
-    justify-content: space-around;
-    display: flex;
-    gap: 50px 0;
-    flex-wrap: wrap;
+  margin-top: 45px;
+  justify-content: space-around;
+  display: flex;
+  gap: 20px; /* Ridotto il gap tra le preview */
+  flex-wrap: wrap;
+  position: relative; /* Aggiunto per evitare sovrapposizioni */
+}
+
+.containerCard {
+  padding: 10;
+  position: relative;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.containerCard:hover {
+  z-index: 10; /* Porta la card in primo piano */
+  transform: translateY(
+    -10px
+  ); /* Aggiunge un piccolo effetto di sollevamento */
+}
+
+.containerCard .text {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.containerCard:hover .text {
+  opacity: 1;
+  max-height: 300px; /* Espande l'area per il testo */
+  padding-bottom: 15px;
 }
 
 @media (width < 1250px) {
-    .containerPreviewProjects {
-        margin-top: 5px;
-        gap:0;
-    } 
+  .containerPreviewProjects {
+    margin-top: 5px;
+    gap: 10px; /* Ancora meno spazio tra le card */
+  }
+
+  .containerCard {
+    padding: 0;
+  }
+  .containerProjects {
+    p.hidden {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+  }
 }
