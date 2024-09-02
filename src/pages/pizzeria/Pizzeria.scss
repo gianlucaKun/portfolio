@@ -1,17 +1,40 @@
-main.containerPizzeria {
-    margin: 85px 0 25px;
-    padding: 30px 120px 15px;
+$bgDiv: rgba(0, 0, 0, 0.441);
 
-    .btnleftArrow {
-        background-color: #000000a9;
-        border-radius: 50%;
-        padding: 10px 15px;
-        font-size: 1.5rem;
-        position: absolute;
-        left: 45px;  
-        top: 185px;
-      }
-      .title {
-        text-align: center;
+main.containerPizzeria {
+  margin: 85px 0 25px;
+  padding: 30px 120px 15px;
+
+  .btnleftArrow {
+    background-color: #000000a9;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 45px;
+    top: 185px;
+  }
+  .title {
+    text-align: center;
+  }
+}
+
+@media (width < 750px) {
+  main.containerPizzeria {
+    padding: 30px 16px 15px;
+    .title {
+      position: relative;
+      top: -48px;
     }
+  .description {
+    background-color: $bgDiv;
+    padding: 15px 35px 35px;
+    border-radius: 33px;
+    height: fit-content;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 }

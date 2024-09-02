@@ -1,13 +1,17 @@
 $bgDiv: rgba(0, 0, 0, 0.441);
 
-
 .containerCamping {
   margin: 85px 0 25px;
   padding: 30px 120px 15px;
+
   .mobile {
     display: none;
   }
-  h1, h2, h3, h4 {
+
+  h1,
+  h2,
+  h3,
+  h4 {
     text-transform: uppercase;
   }
 
@@ -25,7 +29,6 @@ $bgDiv: rgba(0, 0, 0, 0.441);
     position: absolute;
     left: 45px;
     top: 185px;
-    border: none;
     cursor: pointer;
     z-index: 10;
   }
@@ -53,27 +56,26 @@ $bgDiv: rgba(0, 0, 0, 0.441);
         margin-right: 5px;
       }
     }
-   
   }
 
   .contentWrapper {
     display: flex;
-    flex-direction: column; // Impila i contenuti verticalmente per la vista desktop
+    flex-direction: column;
 
     &.mobileView {
-      flex-direction: row; // Allinea i contenuti orizzontalmente per la vista mobile
+      flex-direction: row;
       justify-content: space-between;
 
       .iframeContainer {
         flex: 1;
-        margin-right: 20px; // Spazio tra iframe e descrizione
+        margin-right: 20px;
       }
 
       .containerDescription {
         flex: 1;
-        gap: 15px;
         display: flex;
         flex-direction: column;
+        gap: 15px;
       }
     }
   }
@@ -96,7 +98,7 @@ $bgDiv: rgba(0, 0, 0, 0.441);
     }
 
     &.rotated {
-      padding-bottom: 38%; // 2:3 aspect ratio for rotated view
+      padding-bottom: 38%;
       max-width: 350px;
     }
   }
@@ -105,19 +107,27 @@ $bgDiv: rgba(0, 0, 0, 0.441);
     background-color: $bgDiv;
     padding: 15px 35px 35px;
     border-radius: 33px;
+    height: fit-content;
+
     &.mobileView {
       margin-top: 0;
     }
-    height: fit-content;
   }
 
-  @media (width < 750px) {
-    .iframeContainer {
-      display: none;
+  @media (max-width: 750px) {
+    padding: 30px 15px;
+    
+    .btnleftArrow {
+      top: 150px;
+      left: 15px;
     }
+    
+
+    .iframeContainer,
     .viewControls {
       display: none;
     }
+
     .mobile {
       display: block;
       text-align: center;
@@ -135,6 +145,14 @@ $bgDiv: rgba(0, 0, 0, 0.441);
         right: -10px;
         font-size: 1.5rem;
         cursor: pointer;
+      }
+    }
+    .containerDescription {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-left: -38px;
       }
     }
   }

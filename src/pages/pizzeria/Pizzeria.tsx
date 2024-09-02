@@ -16,7 +16,7 @@ const Pizzeria: React.FC = () => {
         <p className="description">
           Un'applicazione web per una pizzeria, progettata per offrire una navigazione fluida attraverso diverse sezioni del sito, come la Home, il Menu, e una pagina "About". L'applicazione utilizza React Router per gestire le varie pagine, garantendo un'esperienza utente dinamica e interattiva.
         </p>
-        <ul>
+        <ul className="description">
           <li>
             <strong>Home Page:</strong> La homepage presenta un header accattivante con il nome della pizzeria e un pulsante per accedere rapidamente al menu.
           </li>
