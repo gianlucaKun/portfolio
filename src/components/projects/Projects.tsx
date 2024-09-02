@@ -12,6 +12,8 @@ const Projects: React.FC = () => {
 
   const testoPizzria : string = "Il progetto React per la pizzeria è un'applicazione web interattiva che offre una navigazione fluida attraverso diverse sezioni del sito, come la Home, il Menu, e una pagina About. Il progetto è organizzato utilizzando React Router per gestire le diverse pagine, fornendo un'esperienza utente dinamica."
 
+  const testoCamping : string = "Sviluppo di un sito web moderno e responsive per un campeggio, realizzato con React, TypeScript e SCSS. Attualmente include una landing page e sarà ampliato con nuove funzionalità." 
+
   return (
     <div className='containerProjects' id='projects'>
         <div><h2>Projects</h2>
@@ -35,7 +37,7 @@ const Projects: React.FC = () => {
             />
             <ProjectCard 
               imgUrl={campingpreview} 
-              text='camping Zampa' 
+              text={testoCamping} 
               link='/camping'
               onHover={() => setIsHovered(true)}
               onLeave={() => setIsHovered(false)}
