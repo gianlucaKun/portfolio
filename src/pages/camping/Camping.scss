@@ -82,7 +82,7 @@ $bgDiv: rgba(0, 0, 0, 0.441);
 
   .iframeContainer {
     position: relative;
-    padding-bottom: 45.25%;
+    padding-bottom: 50.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -98,9 +98,15 @@ $bgDiv: rgba(0, 0, 0, 0.441);
     }
 
     &.rotated {
-      padding-bottom: 38%;
+      padding-bottom: 55%;
       max-width: 350px;
     }
+  }
+  div.containerDescription {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .description {
@@ -116,12 +122,11 @@ $bgDiv: rgba(0, 0, 0, 0.441);
 
   @media (max-width: 750px) {
     padding: 30px 15px;
-    
+
     .btnleftArrow {
       top: 150px;
       left: 15px;
     }
-    
 
     .iframeContainer,
     .viewControls {
